@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mikaeil DevLab — Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="Mikaeil DevLab">
+        <img src="img/logo.svg" alt="MZ" class="logo">
+        <span class="brand-text">Mikaeil DevLab</span>
+      </a>
+      <button class="hamburger" id="navToggle" aria-label="Öppna meny">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="active">Startsida</a>
+        <a href="about.html">Om mig</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="hero">
+      <img src="img/hero.svg" alt="Hero Mikaeil DevLab" class="hero-img">
+      <div class="hero-text">
+        <h1>Mikaeil Zoughdar Moghadam</h1>
+        <p class="lead">Javautvecklare — Backendfokus & problemlösning</p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Utvalda projekt</h2>
+      <div class="cards">
+        <article class="card project-card">
+          <img src="img/project1-small.svg" alt="ConsoleBank">
+          <div class="card-body">
+            <h3>ConsoleBank</h3>
+            <p>Simulerad bankapplikation utvecklad i Java. Fokus: kontohantering, transaktioner och enhetstester.</p>
+            <a class="btn btn-outline-danger" href="project1.html">Visa projekt</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="img/project2-small.svg" alt="TaskManager">
+          <div class="card-body">
+            <h3>TaskManager</h3>
+            <p>Uppgiftslista med persistens via fil och enkel CLI. Fokus: datamodell, serialisering och undantagshantering.</p>
+            <a class="btn btn-outline-danger" href="project2.html">Visa projekt</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="img/project3-small.svg" alt="WeatherApp">
+          <div class="card-body">
+            <h3>WeatherApp</h3>
+            <p>En prototyp som hämtar väderdata (mock) och visar hur API-integration kan struktureras i Java.</p>
+            <a class="btn btn-outline-danger" href="project3.html">Visa projekt</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h2>Teknisk profil</h2>
+      <ul class="tech-list">
+        <li>Språk: Java (SE)</li>
+        <li>Verktyg: Maven, JUnit, Git</li>
+        <li>Fokus: Backend, testdriven utveckling, konceptuell arkitektur</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Mikaeil Zoughdar Moghadam — Javautvecklare</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+:root{
+  --bg:#0f0d0d;
+  --card:#161212;
+  --accent:#ff3b3b;
+  --muted:#bdbdbd;
+  --max-width:1100px;
+  --transition:180ms ease;
+  --radius:10px;
+}
+/* Base */
+body.dark{ background:var(--bg); color:var(--muted); font-family: Inter, Roboto, Arial, sans-serif; }
+.container{ width:90%; max-width:var(--max-width); margin:0 auto; }
+/* Topbar */
+.topbar{ background:linear-gradient(90deg, rgba(255,59,59,0.04), transparent); border-bottom:1px solid rgba(255,59,59,0.06); position:sticky; top:0; z-index:50; }
+.topbar-inner{ display:flex; align-items:center; gap:1rem; padding:0.8rem 0; justify-content:space-between; }
+.brand{ display:flex; align-items:center; gap:0.6rem; color:var(--muted); font-weight:700; }
+.logo{ width:44px; height:44px; border-radius:8px; background:#1b1414; }
+.brand-text{ color:#fff; font-weight:600; }
+/* Nav */
+.nav{ display:flex; gap:1rem; align-items:center; }
+.nav a{ color:var(--muted); padding:0.4rem 0.6rem; border-radius:6px; transition: background var(--transition), color var(--transition); }
+.nav a:hover, .nav a.active{ background:rgba(255,59,59,0.08); color:var(--accent); }
+/* Hamburger */
+.hamburger{ display:none; background:transparent; border:0; color:var(--muted); font-size:22px; }
+/* Hero */
+.hero{ display:flex; gap:1rem; align-items:center; margin:1.6rem 0; }
+.hero-img{ width:48%; border-radius:12px; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+.hero-text h1{ color:#fff; font-size:28px; margin-bottom:0.4rem; }
+.lead{ color:var(--muted); }
+/* Projects */
+.projects h2{ color:#fff; margin-top:1rem; margin-bottom:0.6rem; }
+.cards{ display:flex; gap:1rem; flex-wrap:wrap; }
+.project-card{ background:var(--card); border-radius:var(--radius); overflow:hidden; width:calc(33% - 0.66rem); box-shadow: 0 8px 24px rgba(0,0,0,0.6); transition: transform var(--transition); }
+.project-card img{ height:160px; object-fit:cover; width:100%; }
+.card-body{ padding:1rem; color:var(--muted); }
+.card-body h3{ color:#fff; margin-bottom:0.4rem; }
+.btn-outline-danger{ border-color:rgba(255,59,59,0.3); color:var(--accent); }
+.btn-outline-danger:hover{ background:rgba(255,59,59,0.06); color:#fff; }
+/* Summary */
+.summary{ margin:1.6rem 0; }
+/* About */
+.profile-grid{ display:flex; gap:1rem; align-items:center; padding:1.2rem 0; }
+.profile-text{ flex:1; color:var(--muted); }
+.profile-image img{ width:220px; border-radius:12px; box-shadow: 0 8px 20px rgba(0,0,0,0.6); }
+/* Project page small hero */
+.small-hero img{ width:100%; border-radius:8px; }
+/* Footer */
+.site-footer{ margin-top:2rem; padding:1rem 0; text-align:center; color:var(--muted); }
+/* Responsive */
+@media (max-width:900px){
+  .project-card{ width:calc(50% - 0.5rem); }
+  .hero-img{ display:none; }
+}
+@media (max-width:600px){
+  .project-card{ width:100%; }
+  .nav{ display:none; }
+  .hamburger{ display:block; }
+  .hero{ flex-direction:column; }
+  .hero-img{ width:100%; }
+}
+/* Inputs */
+.red-input{ background:#120f0f; border:1px solid rgba(255,59,59,0.12); color:var(--muted); }
+.red-input:focus{ outline:2px solid rgba(255,59,59,0.14); }
+/* Utility */
+a:focus{ outline:3px solid rgba(255,59,59,0.12); outline-offset:2px; }
