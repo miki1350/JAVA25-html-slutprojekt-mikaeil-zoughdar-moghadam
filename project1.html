@@ -9,53 +9,62 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="dark">
+
   <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="../index.html">
-        <img src="../img/logo.svg" class="logo" alt="MZ">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="brand d-flex align-items-center" href="../index.html">
+        <img src="../img/logo.svg" alt="MZ" class="logo me-2">
         <span class="brand-text">Mikaeil DevLab</span>
       </a>
-      <nav class="nav">
-        <a href="../index.html">Startsida</a>
-        <a href="../about.html">Om mig</a>
-        <a href="../contact.html">Kontakt</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        ☰
+      </button>
+      <nav class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Startsida</a></li>
+          <li class="nav-item"><a href="../about.html" class="nav-link">Om mig</a></li>
+          <li class="nav-item"><a href="../contact.html" class="nav-link">Kontakt</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container project-main">
-    <h1>ConsoleBank</h1>
+  <main class="container my-5">
+    <h1 class="mb-4 text-center">ConsoleBank</h1>
 
-    <section class="hero small-hero">
-      <picture>
-        <source media="(max-width:600px)" srcset="https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=800&q=60">
-        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437c9?auto=format&fit=crop&w=1200&q=80" alt="ConsoleBank hero">
-      </picture>
+    <section class="hero mb-4 text-center">
+      <img src="https://lh6.googleusercontent.com/proxy/ziFBbY9NGn_1tbKPqVCEU0bmVCgIBFf4S0YwEvEB1-U_bz8fUXJP4zs9-X-Tpzc5crazJ33dq08-WIzgzVwem9knyK3NHqbwqiJQvUgifNmMnvQ" alt="ConsoleBank hero" class="img-fluid rounded">
     </section>
 
-    <section class="thumbs">
-      <img src="https://images.unsplash.com/photo-1588776814546-4448e0b8d2a7?auto=format&fit=crop&w=600&q=80" alt="Bankdata i terminalen">
-      <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?auto=format&fit=crop&w=600&q=80" alt="Testning i JUnit">
-      <img src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?auto=format&fit=crop&w=600&q=80" alt="Programflöde i Java">
+    <section class="thumbs row g-3 mb-4">
+      <div class="col-md-4">
+        <img src="https://thumbs.dreamstime.com/b/hand-holding-coins-to-stack-growth-plant-step-concept-saving-money-finance-accounting-135832008.jpg" class="img-fluid rounded" alt="Kodstruktur i projektet">
+      </div>
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Euro_coins_and_banknotes_%28cropped%29.jpg/1200px-Euro_coins_and_banknotes_%28cropped%29.jpg" class="img-fluid rounded" alt="Testning i JUnit">
+      </div>
+      <div class="col-md-4">
+        <img src="https://www.moneydigest.com/img/gallery/heres-how-much-money-really-exists-in-the-world/l-intro-1704559079.jpg" class="img-fluid rounded" alt="Programflöde i terminalen">
+      </div>
     </section>
 
-    <section class="project-desc">
+    <section class="project-desc mb-5">
       <h2>Beskrivning</h2>
-      <p>ConsoleBank är en terminalbaserad bankapplikation skriven i Java. Projektet visar hur man hanterar konton, insättningar, uttag och transaktionshistorik med fokus på objektorienterad programmering och testning.</p>
+      <p>ConsoleBank är en terminalbaserad bankapplikation skriven i Java. Projektet demonstrerar kontohantering, transaktioner, validering och enhetstester med JUnit.</p>
 
       <h3>Vad jag lärde mig</h3>
       <ul>
-        <li>Att designa klasser för verkliga system, som konton och transaktioner</li>
-        <li>Validering av användardata och felhantering</li>
+        <li>Design av domänmodeller (Account, Transaction)</li>
+        <li>Validering och undantagshantering</li>
         <li>Att skriva och köra enhetstester med JUnit</li>
       </ul>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Mikaeil Z. Moghadam</p>
-    </div>
+  <footer class="text-center py-4 bg-dark text-light">
+    <p class="mb-0">© 2025 Mikaeil Zoughdar Moghadam</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
