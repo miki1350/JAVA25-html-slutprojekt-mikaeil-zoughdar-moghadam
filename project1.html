@@ -10,61 +10,60 @@
 </head>
 <body class="dark">
 
-  <header class="topbar">
-    <div class="container d-flex justify-content-between align-items-center py-3">
-      <a class="brand d-flex align-items-center" href="../index.html">
-        <img src="../img/logo.svg" alt="MZ" class="logo me-2">
-        <span class="brand-text">Mikaeil DevLab</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        ☰
-      </button>
-      <nav class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a href="../index.html" class="nav-link">Startsida</a></li>
-          <li class="nav-item"><a href="../about.html" class="nav-link">Om mig</a></li>
-          <li class="nav-item"><a href="../contact.html" class="nav-link">Kontakt</a></li>
-        </ul>
-      </nav>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="../index.html">
+      <img src="../img/logo.svg" class="logo" alt="MZ">
+      <span class="brand-text">Mikaeil DevLab</span>
+    </a>
+    <nav class="nav">
+      <a href="../index.html">Startsida</a>
+      <a href="../about.html">Om mig</a>
+      <a href="../contact.html">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container project-main">
+  <h1>ConsoleBank</h1>
+
+  <section class="hero small-hero mb-4">
+    <picture>
+      <source media="(max-width:600px)" srcset="https://lh6.googleusercontent.com/proxy/ziFBbY9NGn_1tbKPqVCEU0bmVCgIBFf4S0YwEvEB1-U_bz8fUXJP4zs9-X-Tpzc5crazJ33dq08-WIzgzVwem9knyK3NHqbwqiJQvUgifNmMnvQ">
+      <img src="https://lh6.googleusercontent.com/proxy/ziFBbY9NGn_1tbKPqVCEU0bmVCgIBFf4S0YwEvEB1-U_bz8fUXJP4zs9-X-Tpzc5crazJ33dq08-WIzgzVwem9knyK3NHqbwqiJQvUgifNmMnvQ" alt="ConsoleBank" class="img-fluid rounded">
+    </picture>
+  </section>
+
+  <section class="thumbs row g-3 mb-4">
+    <div class="col-md-4">
+      <img src="https://thumbs.dreamstime.com/b/hand-holding-coins-to-stack-growth-plant-step-concept-saving-money-finance-accounting-135832008.jpg" class="img-fluid rounded" alt="Kodstruktur i projektet">
     </div>
-  </header>
+    <div class="col-md-4">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Euro_coins_and_banknotes_%28cropped%29.jpg/1200px-Euro_coins_and_banknotes_%28cropped%29.jpg" class="img-fluid rounded" alt="Testning i JUnit">
+    </div>
+    <div class="col-md-4">
+      <img src="https://www.moneydigest.com/img/gallery/heres-how-much-money-really-exists-in-the-world/l-intro-1704559079.jpg" class="img-fluid rounded" alt="Programflöde i terminalen">
+    </div>
+  </section>
 
-  <main class="container my-5">
-    <h1 class="text-center mb-4">ConsoleBank</h1>
+  <section class="project-desc">
+    <h2>Beskrivning</h2>
+    <p>ConsoleBank är en terminalbaserad bankapplikation skriven i Java. Projektet demonstrerar kontohantering, transaktioner, validering och enhetstester med JUnit.</p>
+    <h3>Vad jag lärde mig</h3>
+    <ul>
+      <li>Design av domänmodeller (Account, Transaction)</li>
+      <li>Validering och undantagshantering</li>
+      <li>Att skriva och köra enhetstester med JUnit</li>
+    </ul>
+  </section>
+</main>
 
-    <section class="hero text-center mb-4">
-      <img src="https://lh6.googleusercontent.com/proxy/ziFBbY9NGn_1tbKPqVCEU0bmVCgIBFf4S0YwEvEB1-U_bz8fUXJP4zs9-X-Tpzc5crazJ33dq08-WIzgzVwem9knyK3NHqbwqiJQvUgifNmMnvQ" alt="ConsoleBank hero" class="img-fluid rounded">
-    </section>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Mikaeil Z. Moghadam</p>
+  </div>
+</footer>
 
-    <section class="thumbs row g-3 mb-4">
-      <div class="col-md-4">
-        <img src="https://thumbs.dreamstime.com/b/hand-holding-coins-to-stack-growth-plant-step-concept-saving-money-finance-accounting-135832008.jpg" class="img-fluid rounded" alt="Kodstruktur i projektet">
-      </div>
-      <div class="col-md-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Euro_coins_and_banknotes_%28cropped%29.jpg/1200px-Euro_coins_and_banknotes_%28cropped%29.jpg" class="img-fluid rounded" alt="Testning i JUnit">
-      </div>
-      <div class="col-md-4">
-        <img src="https://www.moneydigest.com/img/gallery/heres-how-much-money-really-exists-in-the-world/l-intro-1704559079.jpg" class="img-fluid rounded" alt="Programflöde i terminalen">
-      </div>
-    </section>
-
-    <section class="project-desc mb-5">
-      <h2>Beskrivning</h2>
-      <p>ConsoleBank är en terminalbaserad bankapplikation skriven i Java. Projektet demonstrerar kontohantering, transaktioner, validering och enhetstester med JUnit.</p>
-
-      <h3>Vad jag lärde mig</h3>
-      <ul>
-        <li>Design av domänmodeller (Account, Transaction)</li>
-        <li>Validering och undantagshantering</li>
-        <li>Att skriva och köra enhetstester med JUnit</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="text-center py-4 bg-dark text-light">
-    <p class="mb-0">© 2025 Mikaeil Zoughdar Moghadam</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
