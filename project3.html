@@ -1,50 +1,81 @@
-<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WeatherApp — Mikaeil</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/style.css"></head><body class="dark">
-<header class="topbar"><div class="container topbar-inner"><a class="brand" href="index.html"><img src="img/logo.svg" class="logo" alt="MZ"><span class="brand-text">Mikaeil DevLab</span></a><nav class="nav"><a href="index.html">Startsida</a><a href="about.html">Om mig</a><a href="contact.html">Kontakt</a></nav>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        ☰
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WeatherApp — Mikaeil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark">
+  <header class="topbar">
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid py-3 px-4">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.svg" alt="MZ" class="logo me-2">
+        <span class="brand-text">Mikaeil DevLab</span>
+      </a>
+
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <nav class="collapse navbar-collapse" id="mainNav">
+
+      
+      <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a href="index.html" class="nav-link active">Startsida</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Startsida</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">Om mig</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Kontakt</a></li>
         </ul>
-      </nav>
+      </div>
+    </nav>
+  </header>
 
-</div>
-</header>
-<style>
-    .thumbs {
-      display: flex;
-      gap: 0.5rem;
-      margin: 1rem 0;
-    }
-    .thumbs img {
-      flex: 1;
-      max-width: 30%;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-  </style>
   <main class="container project-main">
+    <h1>WeatherApp</h1>
 
-  <h1>WeatherApp</h1>
-  <section class="hero small-hero">
-    <picture><source media="(max-width:600px)" srcset="https://play-lh.googleusercontent.com/g-giJLIHM2Hp3YEHbXi-IOz42s1cfKw3fQs3dF3NNkONd2hHuF5YNeOmRbQftKREmg"><img src="https://play-lh.googleusercontent.com/g-giJLIHM2Hp3YEHbXi-IOz42s1cfKw3fQs3dF3NNkONd2hHuF5YNeOmRbQftKREmg" alt="WeatherApp"></picture>
-  </section>
-<section class="thumbs">
-    <img src="https://www.shutterstock.com/image-photo/dramatic-moody-landscape-solitary-tree-600nw-2447479949.jpg" alt="Extra bild 1">
-    <img src="https://www.shutterstock.com/image-vector/cloudy-vector-illustration-weather-kids-260nw-2345403471.jpg" alt="Extra bild 2">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-vOFW8deG_GrBfzcyiBaTVh11J7TsgQtwKi6TU5Y-dZ9E4qbwfLSFqjLJvPsRQAhFZNo&usqp=CAU" alt="Extra bild 3">
-  </section>
+    <section class="hero small-hero mb-4">
+      <img src="https://play-lh.googleusercontent.com/g-giJLIHM2Hp3YEHbXi-IOz42s1cfKw3fQs3dF3NNkONd2hHuF5YNeOmRbQftKREmg"
+           alt="WeatherApp" class="img-fluid rounded">
+    </section>
+
+    <section class="thumbs row g-3 mb-4">
+      <div class="col-md-4">
+        <img src="https://www.shutterstock.com/image-photo/dramatic-moody-landscape-solitary-tree-600nw-2447479949.jpg"
+             class="img-fluid rounded" alt="Extra bild 1">
+      </div>
+      <div class="col-md-4">
+        <img src="https://www.shutterstock.com/image-vector/cloudy-vector-illustration-weather-kids-260nw-2345403471.jpg"
+             class="img-fluid rounded" alt="Extra bild 2">
+      </div>
+      <div class="col-md-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-vOFW8deG_GrBfzcyiBaTVh11J7TsgQtwKi6TU5Y-dZ9E4qbwfLSFqjLJvPsRQAhFZNo&usqp=CAU"
+             class="img-fluid rounded" alt="Extra bild 3">
+      </div>
+    </section>
+
+    <section class="project-desc">
+      <h2>Beskrivning</h2>
+      <p>WeatherApp är en app som visar hur vädret ska bli.</p>
+      <h3>Sol, regn, snö</h3>
+      <ul>
+        <li>Visar dig vädret</li>
+        <li>Få reda på vädret för imorgon</li>
+        <li>Ha koll på vädret för olika dagar</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Mikaeil Z. Moghadam</p>
+    </div>
+  </footer>
+
   
-  <section class="project-desc">
-    <h2>Beskrivning</h2>
-    <p>WeatherApp är en hur vädret ska bli</p>
-    <h3>sol, regn, snö</h3>
-    <ul><li>visar dig vädret</li><li>få reda på vädret för imorgon</li><li>ha koll på vädret för olika dagar</li></ul>
-  </section>
-</main>
-<footer class="site-footer"><div class="container"><p>© 2025 Mikaeil Z. Moghadam</p></div></footer>
-</body></html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
