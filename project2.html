@@ -1,48 +1,81 @@
-<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TaskManager — Mikaeil</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/style.css"></head><body class="dark">
-<header class="topbar"><div class="container topbar-inner"><a class="brand" href="index.html"><img src="img/logo.svg" class="logo" alt="MZ"><span class="brand-text">Mikaeil DevLab</span></a><nav class="nav"><a href="index.html">Startsida</a><a href="about.html">Om mig</a><a href="contact.html">Kontakt</a></nav>
- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        ☰
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TaskManager — Mikaeil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark">
+  <header class="topbar">
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid py-3 px-4">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.svg" alt="MZ" class="logo me-2">
+        <span class="brand-text">Mikaeil DevLab</span>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <nav class="collapse navbar-collapse" id="mainNav">
+
+      
+      <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a href="index.html" class="nav-link active">Startsida</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Startsida</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">Om mig</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Kontakt</a></li>
         </ul>
-      </nav>
-</div>
-</header>
-<style>
-    .thumbs {
-      display: flex;
-      gap: 0.5rem;
-      margin: 1rem 0;
-    }
-    .thumbs img {
-      flex: 1;
-      max-width: 30%;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-  </style>
+      </div>
+    </nav>
+  </header>
+
   <main class="container project-main">
-  <h1>TaskManager</h1>
-  <section class="hero small-hero">
-    <picture><source media="(max-width:600px)" srcset="https://snacknation.com/wp-content/uploads/2021/07/shutterstock_1084761839-scaled.jpg"><img src="https://snacknation.com/wp-content/uploads/2021/07/shutterstock_1084761839-scaled.jpg" alt="TaskManager"></picture>
-  </section>
- <section class="thumbs">
-    <img src="https://media.istockphoto.com/id/1502449969/photo/serious-and-focused-financier-accountant-on-paper-work-inside-office-mature-man-using.jpg?s=612x612&w=0&k=20&c=Mfeho0VIZ-4LbmLHDrnibrYkBZxNlwo4faVNyoxfUuk=" alt="Extra bild 1">
-    <img src="https://imageio.forbes.com/blogs-images/karlynborysenko/files/2019/01/newmanager.jpg?height=320&width=640&fit=bounds" alt="Extra bild 2">
-    <img src="https://plus.unsplash.com/premium_photo-1682141308411-29d7662447cb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFuYWdlcnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="Extra bild 3">
-  </section>
+    <h1>TaskManager</h1>
+
+    <section class="hero small-hero mb-4">
+      <img src="https://snacknation.com/wp-content/uploads/2021/07/shutterstock_1084761839-scaled.jpg"
+           alt="TaskManager" class="img-fluid rounded">
+    </section>
+
+    <section class="thumbs row g-3 mb-4">
+      <div class="col-md-4">
+        <img src="https://media.istockphoto.com/id/1502449969/photo/serious-and-focused-financier-accountant-on-paper-work-inside-office-mature-man-using.jpg?s=612x612&w=0&k=20&c=Mfeho0VIZ-4LbmLHDrnibrYkBZxNlwo4faVNyoxfUuk="
+             class="img-fluid rounded" alt="Extra bild 1">
+      </div>
+      <div class="col-md-4">
+        <img src="https://imageio.forbes.com/blogs-images/karlynborysenko/files/2019/01/newmanager.jpg?height=320&width=640&fit=bounds"
+             class="img-fluid rounded" alt="Extra bild 2">
+      </div>
+      <div class="col-md-4">
+        <img src="https://plus.unsplash.com/premium_photo-1682141308411-29d7662447cb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFuYWdlcnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000"
+             class="img-fluid rounded" alt="Extra bild 3">
+      </div>
+    </section>
+
+    <section class="project-desc">
+      <h2>Beskrivning</h2>
+      <p>TaskManager</p>
+      <h3>Management och task</h3>
+      <ul>
+        <li>Vad är TaskManager?</li>
+        <li>Hur löser det ditt problem?</li>
+        <li>Vad kan det hjälpa dig med?</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Mikaeil Z. Moghadam</p>
+    </div>
+  </footer>
+
   
-  <section class="project-desc">
-    <h2>Beskrivning</h2>
-    <p>TaskManager </p>
-    <h3>managment och task</h3>
-    <ul><li>vad är taskmanager?</li><li>hur låser de ditt problem?</li><li>vad kan de hjälpa dig med</li></ul>
-  </section>
-</main>
-<footer class="site-footer"><div class="container"><p>© 2025 Mikaeil Z. Moghadam</p></div></footer>
-</body></html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
